@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/stopwatch&timer/logo.avif">
+  <title>Unit Converters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <H1>UNIT <span id="color">CONVERTER<span></H1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="main">
+      <h3>Unit Converter Super version</h3>
+    </div>
+  </div>
+
+
+
+
+  <h2>Select Converter type</h2>
+
+  <ul>
+    <li><a href="index.html"><button onclick="changeText1()">LENGTH</button></a></li>
+
+    <li><a href="temperature.html"><button value="" onclick="changeText2()">TEMPERATURE</button></a></li>
+    <li><a href="area.html"><button onclick="changeText3()">AREA</button></a></li>
+    <li><a href="volume.html"><button onclick="changeText4()">VOLUME</button></a></li>
+    <li><a href="weight.html"><button onclick="changeText5()">WEIGHT</button></a></li>
+    <li><a href="time.html"><button onclick="changeText6()">TIME</button></a></li>
+    
+  </ul>
+
+  <div class="convertertext1">
+    <h1> <span id="convertertext">TEMPERATURE</span> Unit Converter</h1>
+  </div>
+
+  <script src="temperature.js"></script>
+  <div class="container">
+    <div class="fromunit">
+      <label for="fromUnit">From:</label>
+      <select id="fromUnit">
+        <option value="select">Select</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    <div class="tounit">
+      <label for="toUnit">To:</label>
+      <select id="toUnit">
+        <option value="select">Select</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+  </div>
+  <div class="valueinput">
+    <label for="temperatureValue">Value:</label>
+    <input type="number" id="input-value" name="temperatureValue" value="" />
+  </div>
+  <div class="convert">
+    <button type="button" onclick="convertTemperature()">Convert</button>
+    <p id="result"></p>
+  </div>
+
+</body>
+
+</html>
